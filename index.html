@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Kamal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      emailjs.init("7LrMEWoehu5ABuAMs");
+    });
+  </script>
+</head>
+<body>
+  <nav>
+    <h3>portfolio.</h3>
+    <div class="items">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#Skills">Skills</a>
+      <a href="#contact-form">Contactus</a>
+    </div>
+  </nav>
+
+  <div class="hero-section">
+    <div class="content">
+      <h1>Hello It's Me</h1>
+      <h1>Mustafa kamal</h1>
+      <h1>And I'm <span id="changing-text"></span></h1>
+      <p>Building with code, designing responsive websites. Passionate about UI/UX and</p>
+      <p>creative digital experiences.</p>
+      <div class="social-icons">
+        <a href="https://github.com/Mustafakamal10" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mustafa-kamal-674077326" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#contact-form"><i class="fa-solid fa-envelope"></i></a>
+        <a href="Mustafakamal_Resume.pdf" target="_blank"><i class="fa-solid fa-file-alt"></i></a>
+      </div>
+      <div class="buttons">
+        <a href="#contact-form" class="btn primary-btn">Get In Touch</a>
+        <a href="#projects" class="btn secondary-btn">View Projects</a>
+      </div>
+    </div>
+    <div class="imge">
+      <img src="images/my-image.PNG" alt="Mustafa Kamal" />
+    </div>
+  </div>
+
+  <section id="about" class="about-section">
+    <h2>About <span class="highlighted-name">Mustafa kamal</span></h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="images/my-image.PNG" alt="my Picture">
+      </div>
+      <div class="about-text">
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Peshawar, KPK, Pakistan</p>
+        <p class="expert"><i class="fas fa-user-graduate"></i> Front-End Web Developer</p>
+        <p>I specialize in building responsive, interactive, and user-friendly websites using HTML, CSS, JavaScript, and React. With a strong focus on clean design and seamless functionality, I create digital experiences that work flawlessly across all devices.</p>
+        <div class="social-icons">
+          <a href="https://github.com/Mustafakamal10" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mustafa-kamal-674077326" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#contact-form"><i class="fa-solid fa-envelope"></i></a>
+          <a href="Mustafakamal_Resume.pdf" target="_blank"><i class="fa-solid fa-file-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Skills" class="skills-section">
+    <h2><i class="fa-solid fa-laptop-code"></i> Skills</h2>
+    <p class="subtitle">Technologies & Tools I use as a Frontend Developer</p>
+    <div class="skills-container">
+      <div class="skills-category">
+        <h3>Frontend</h3>
+        <div class="skills-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        </div>
+      </div>
+      <div class="skills-category">
+        <h3>Backend</h3>
+        <div class="skills-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        </div>
+      </div>
+      <div class="skills-category">
+        <h3>Tools & Others</h3>
+        <div class="skills-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/netflex.png" alt="Netflex_clone">
+        <div class="overlay">
+          <span>Netflex clone</span>
+          <div class="project-buttons">
+            <a href="https://mustafakamal10.github.io/Netflex_clone/" target="_blank" class="btn">Live Preview</a>
+            <a href="https://github.com/Mustafakamal10/Netflex_clone.git" target="_blank" class="btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/todo.jpg" alt="Todo App">
+        <div class="overlay">
+          <span>Todo App</span>
+          <div class="project-buttons">
+            <a href="https://mustafakamal10.github.io/Todo_app/" target="_blank" class="btn">Live Preview</a>
+            <a href="https://github.com/Mustafakamal10/Todo_app.git" target="_blank" class="btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/gym.jpg" alt="Gym Website">
+        <div class="overlay">
+          <span>Gym website</span>
+          <div class="project-buttons">
+            <a href="https://mustafakamal10.github.io/gym_website/" target="_blank" class="btn">Live Preview</a>
+            <a href="https://github.com/Mustafakamal10/gym_website.git" target="_blank" class="btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section id="contact-form" class="contact-section">
+    <h2>Contact <span class="highlighted-name">Me</span></h2>
+    <p class="contact-subtext">Have a project in mind or just want to say hello? Fill out the form below or connect through social media!</p>
+    <div class="contact-container">
+      <form id="contact" class="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+        <input type="email" name="from_email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+      <div class="contact-social">
+        <h3>Follow me:</h3>
+        <div class="social-icons">
+          <a href="https://github.com/Mustafakamal10" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mustafa-kamal-674077326" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#contact-form"><i class="fa-solid fa-envelope"></i></a>
+          <a href="Mustafakamal_Resume.pdf" target="_blank"><i class="fa-solid fa-file-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3 class="footer-name">Mustafa Kamal</h3>
+        <p>Frontend Developer passionate about building responsive, user-friendly, and modern web experiences with clean design and efficient code.</p>
+        <div class="footer-social">
+          <a href="https://github.com/Mustafakamal10" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mustafa-kamal-674077326" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#contact-form"><i class="fa-solid fa-envelope"></i></a>
+          <a href="Mustafakamal_Resume.pdf" target="_blank"><i class="fa-solid fa-file-alt"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p>Let’s collaborate on something amazing!</p>
+        <a href="#contact-form" class="footer-connect">Say Hello →</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Mustafa Kamal. All rights reserved.</p>
+      <p>Built with <i class="fa-solid fa-heart" style="color:#38bdf8;"></i> using HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="app.js"></script>
+</body>
+</html>
