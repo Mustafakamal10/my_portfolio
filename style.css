@@ -3,6 +3,11 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 nav {
     background-color: #0f172a;
@@ -53,8 +58,35 @@ nav h3 {
     font-size: 26px;
     color: #fff;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+  .nav-items {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #0f172a;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-items.active {
+    display: flex;
+  }
+
+  .nav-items a {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
 
 /* Hero Section */
 .hero-section {
