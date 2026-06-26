@@ -38,14 +38,14 @@ var typed = new Typed("#changing-text", {
 });
 
 
-document.querySelectorAll('a[href$="Resume.pdf"]').forEach((link) => {
+document.querySelectorAll('a[href$=".pdf"]').forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const fileURL = this.getAttribute("href");
 
     const anchor = document.createElement("a");
     anchor.href = fileURL;
-    anchor.download = "Mustafakamal_Resume.pdf"; 
+    anchor.download = "Mustafa_kamal_Resume.pdf";
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
