@@ -45,7 +45,7 @@ document.querySelectorAll('a[href$=".pdf"]').forEach((link) => {
 
     const anchor = document.createElement("a");
     anchor.href = encodeURI(fileURL);
-    anchor.download = "Mustafa_kamal_CV 1.pdf";
+    anchor.download = "Mustafa_kamal_Resume.pdf";
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
